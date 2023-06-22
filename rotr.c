@@ -8,8 +8,9 @@
 
 void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter)
 {
-	stack_t *copy = *head;
+	stack_t *copy;
 
+	copy = *head;
 	if (*head == NULL || (*head)->next == NULL)
 	{
 		return;
